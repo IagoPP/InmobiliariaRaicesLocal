@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inmuebles</title>
+    <link rel="stylesheet" href="styles_inmuebles.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/index/index.html"><img src="/img/Logo.png" width="200px" height="200px" alt="Logo"></a>
+        </div>
+        <div class="menu">
+            <a href="inmuebles.html" class="op1">Inmuebles</a>
+            <a href="/promociones/promociones.html" class="op2">Promociones</a>
+            <a href="/empresa/empresa.html" class="op3">Empresa</a>
+            <a href="/contacto/contacto.html" class="op4">Contacto</a>
+        </div>
+        <div class="idiomas">
+            <a href="">ES |</a>
+            <a href="">EN</a>
+        </div>
+    </nav>
+    <main>
+        <div class="filtros_contenedor">
+            <form class="filtros">
+                <div class="filtro">
+                    <label for="tipo_inmueble">Tipo de Inmueble</label>
+                    <select id="tipo_inmueble">
+                        <option value="">Seleccione</option>
+                        <option value="casa">Vivienda/Casa</option>
+                        <option value="piso">Piso/Apartamento</option>
+                        <option value="local">Local</option>
+                    </select>
+                </div>
+                <div class="filtro">
+                    <label for="estado">Estado/Conservación</label>
+                    <select id="estado">
+                        <option value="">Seleccione</option>
+                        <option value="estado1">Disponible</option>
+                        <option value="estado2">Reformado</option>
+                        <option value="estado3">A reformar</option>
+                        <option value="estado4">En construcción</option>
+                    </select>
+                </div>
+                <div class="filtro">
+                    <label for="habitaciones">Habitaciones</label>
+                    <input type="number" id="habitaciones" placeholder="Mínimo">
+                </div>
+                <div class="filtro">
+                    <label for="superficie">Superficie (m²)</label>
+                    <input type="number" id="superficie" placeholder="Mínimo">
+                </div>
+                <div class="filtro">
+                    <label for="precio">Precio (€)</label>
+                    <input type="number" id="precio" placeholder="Mínimo">
+                </div>
+                <div class="boton_buscar">
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+        <div class="propiedades_contenedor">
+            <h2>Inmuebles encontrados: 9</h2>
+            <div class="grid_propiedades">
+                <div class="propiedad">
+                    <div class="imagen_propiedad">
+                        <img src="/img/fotosInmueble/Inmueble5.jpg" alt="Local Comercial">
+                    </div>
+                    <div class="detalles_propiedad">
+                        <p class="referencia">Ref. 1268</p>
+                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
+                        <div class="iconos">
+                            <span>🛋 1</span>
+                            <span>1038 m²</span>
+                        </div>
+                        <a href="#" class="boton_info">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="propiedad">
+                    <div class="imagen_propiedad">
+                        <img src="/img/fotosInmueble/Inmueble4.jpg" alt="Local Comercial">
+                    </div>
+                    <div class="detalles_propiedad">
+                        <p class="referencia">Ref. 1268 (2)</p>
+                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
+                        <div class="iconos">
+                            <span>🛋 1</span>
+                            <span>1038 m²</span>
+                        </div>
+                        <a href="#" class="boton_info">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="propiedad">
+                    <div class="imagen_propiedad">
+                        <img src="/img/fotosInmueble/Inmueble12.jpg" alt="Piso y Local">
+                    </div>
+                    <div class="detalles_propiedad">
+                        <p class="referencia">Ref. CAS_4278</p>
+                        <p class="descripcion">PISO + LOCAL DE 150 M</p>
+                        <div class="iconos">
+                            <span>🛋 2</span>
+                            <span>150 m²</span>
+                        </div>
+                        <a href="#" class="boton_info">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="propiedad">
+                    <div class="imagen_propiedad">
+                        <img src="/img/fotosInmueble/Inmueble7.jpg" alt="Local Comercial">
+                    </div>
+                    <div class="detalles_propiedad">
+                        <p class="referencia">Ref. 1268</p>
+                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
+                        <div class="iconos">
+                            <span>🛋 1</span>
+                            <span>1038 m²</span>
+                        </div>
+                        <a href="#" class="boton_info">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="propiedad">
+                    <div class="imagen_propiedad">
+                        <img src="/img/fotosInmueble/Inmueble15.jpg" alt="Local Comercial">
+                    </div>
+                    <div class="detalles_propiedad">
+                        <p class="referencia">Ref. 1268</p>
+                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
+                        <div class="iconos">
+                            <span>🛋 1</span>
+                            <span>1038 m²</span>
+                        </div>
+                        <a href="#" class="boton_info">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="propiedad">
+                    <div class="imagen_propiedad">
+                        <img src="/img/fotosInmueble/Inmueble19.jpg" alt="Local Comercial">
+                    </div>
+                    <div class="detalles_propiedad">
+                        <p class="referencia">Ref. 1268 (2)</p>
+                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
+                        <div class="iconos">
+                            <span>🛋 1</span>
+                            <span>1038 m²</span>
+                        </div>
+                        <a href="#" class="boton_info">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="propiedad">
+                    <div class="imagen_propiedad">
+                        <img src="/img/fotosInmueble/Inmueble10.jpg" alt="Local Comercial">
+                    </div>
+                    <div class="detalles_propiedad">
+                        <p class="referencia">Ref. 1268</p>
+                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
+                        <div class="iconos">
+                            <span>🛋 1</span>
+                            <span>1038 m²</span>
+                        </div>
+                        <a href="#" class="boton_info">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="propiedad">
+                    <div class="imagen_propiedad">
+                        <img src="/img/fotosInmueble/Inmueble2.jpg" alt="Piso y Local">
+                    </div>
+                    <div class="detalles_propiedad">
+                        <p class="referencia">Ref. CAS_4278</p>
+                        <p class="descripcion">PISO + LOCAL DE 150 M</p>
+                        <div class="iconos">
+                            <span>🛋 2</span>
+                            <span>150 m²</span>
+                        </div>
+                        <a href="#" class="boton_info">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="propiedad">
+                    <div class="imagen_propiedad">
+                        <img src="/img/fotosInmueble/Inmueble13.jpg" alt="Local Comercial">
+                    </div>
+                    <div class="detalles_propiedad">
+                        <p class="referencia">Ref. 1268</p>
+                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
+                        <div class="iconos">
+                            <span>🛋 1</span>
+                            <span>1038 m²</span>
+                        </div>
+                        <a href="#" class="boton_info">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_elementos">
+                <div id="logo">
+                    <img src="/img/Logo.png" alt="Logo">
+                </div>
+                <div id="contacts">
+                    <h2>Contactos</h2>
+                    <div id="contacts_body">
+                        <div>
+                            <img src="/img/icons8-location-64.png" alt="location" id="loc">
+                            <p>Rúa de Frei Rosendo Salvado, 16-18, 15701</p>
+                        </div>
+                        <div>
+                            <img src="/img/icons8-mail-96.png" alt="location" id="loc">
+                            <p>Correo: raicesgalegas@inmobiliaria.com</p>
+                        </div>
+                        <div>
+
+                            <img src="/img/icons8-phone-number-90.png" alt="location" id="loc">
+                            <p>Teléfono: 987 25 81 76</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="newsletter">
+                    <h2>Suscríbete a nuestro boletín</h2>
+                    <form action="newsletter.php" method="post">
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+
+
+
+            </div>
+            <div id="footer_avisos">
+                Aviso Legal    |    Política de privacidad    |    Gestionar datos
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
