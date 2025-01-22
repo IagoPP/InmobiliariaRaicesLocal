@@ -3,19 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Inmuebles</title>
-    <link rel="stylesheet" href="styles_inmuebles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+    <link rel="stylesheet" href="styles_promociones.css">
     <link rel="stylesheet" href="/InmobiliariaRaicesLocal/css/footer.css">
     <link rel="stylesheet" href="/InmobiliariaRaicesLocal/css/header.css">
+    <script src="promociones.js"></script>
 </head>
 
 <body>
+    <header>
+        <h1>Raíces Gallegas</h1>
+    </header>
+
     <nav class="navbar">
         <div class="logo">
             <a href="/InmobiliariaRaicesLocal/index.html"><img src="/InmobiliariaRaicesLocal/img/Logo.png" width="200px" height="200px" alt="Logo"></a>
         </div>
         <div class="menu">
-            <a href="/InmobiliariaRaicesLocalinmuebles.html" class="op1">Inmuebles</a>
+            <a href="/InmobiliariaRaicesLocal/inmuebles/inmuebles.html" class="op1">Inmuebles</a>
             <a href="/InmobiliariaRaicesLocal/promociones/promociones.html" class="op2">Promociones</a>
             <a href="/InmobiliariaRaicesLocal/empresa/empresa.html" class="op3">Empresa</a>
             <a href="/InmobiliariaRaicesLocal/contacto/contacto.html" class="op4">Contacto</a>
@@ -25,179 +31,88 @@
             <a href="/InmobiliariaRaicesLocal">EN</a>
         </div>
     </nav>
-    <main>
-        <div class="filtros_contenedor">
-            <form class="filtros">
-                <div class="filtro">
-                    <label for="tipo_inmueble">Tipo de Inmueble</label>
-                    <select id="tipo_inmueble">
-                        <option value="">Seleccione</option>
-                        <option value="casa">Vivienda/Casa</option>
-                        <option value="piso">Piso/Apartamento</option>
-                        <option value="local">Local</option>
-                    </select>
-                </div>
-                <div class="filtro">
-                    <label for="estado">Estado/Conservación</label>
-                    <select id="estado">
-                        <option value="">Seleccione</option>
-                        <option value="estado1">Disponible</option>
-                        <option value="estado2">Reformado</option>
-                        <option value="estado3">A reformar</option>
-                        <option value="estado4">En construcción</option>
-                    </select>
-                </div>
-                <div class="filtro">
-                    <label for="habitaciones">Habitaciones</label>
-                    <input type="number" id="habitaciones" placeholder="Mínimo">
-                </div>
-                <div class="filtro">
-                    <label for="superficie">Superficie (m²)</label>
-                    <input type="number" id="superficie" placeholder="Mínimo">
-                </div>
-                <div class="filtro">
-                    <label for="precio">Precio (€)</label>
-                    <input type="number" id="precio" placeholder="Mínimo">
-                </div>
-                <div class="boton_buscar">
-                    <button type="submit">Buscar</button>
-                </div>
-            </form>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="/InmobiliariaRaicesLocal/img/pexels-alex-qian-1180283-2343465.jpg" alt="Imagen 1">
+            <img src="/InmobiliariaRaicesLocal/img/pexels-curtis-adams-1694007-3288103.jpg" alt="Imagen 2">
+            <img src="/InmobiliariaRaicesLocal/img/pexels-marketingtuig-87223.jpg" alt="Imagen 3">
+
+
         </div>
-        <div class="propiedades_contenedor">
-            <h2>Inmuebles encontrados: 9</h2>
-            <div class="grid_propiedades">
-                <div class="propiedad">
-                    <div class="imagen_propiedad">
-                        <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble5.jpg" alt="Local Comercial">
-                    </div>
-                    <div class="detalles_propiedad">
-                        <p class="referencia">Ref. 1268</p>
-                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
-                        <div class="iconos">
-                            <span>🛋 1</span>
-                            <span>1038 m²</span>
-                        </div>
-                        <a href="/InmobiliariaRaicesLocal#" class="boton_info">Ver Detalles</a>
-                    </div>
-                </div>
+        <div class="carousel-buttons">
+            <button id="prev">&#9664;</button>
+            <button id="next">&#9654;</button>
+        </div>
+    </div>
 
-                <div class="propiedad">
-                    <div class="imagen_propiedad">
-                        <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble4.jpg" alt="Local Comercial">
-                    </div>
-                    <div class="detalles_propiedad">
-                        <p class="referencia">Ref. 1268 (2)</p>
-                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
-                        <div class="iconos">
-                            <span>🛋 1</span>
-                            <span>1038 m²</span>
-                        </div>
-                        <a href="/InmobiliariaRaicesLocal#" class="boton_info">Ver Detalles</a>
-                    </div>
-                </div>
+    <section class="busqueda-promociones">
+        <h2>Búsqueda de Promociones</h2>
+        <form action="#" method="GET">
+            <div class="form-row">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
 
-                <div class="propiedad">
-                    <div class="imagen_propiedad">
-                        <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble12.jpg" alt="Piso y Local">
-                    </div>
-                    <div class="detalles_propiedad">
-                        <p class="referencia">Ref. CAS_4278</p>
-                        <p class="descripcion">PISO + LOCAL DE 150 M</p>
-                        <div class="iconos">
-                            <span>🛋 2</span>
-                            <span>150 m²</span>
-                        </div>
-                        <a href="/InmobiliariaRaicesLocal#" class="boton_info">Ver Detalles</a>
-                    </div>
-                </div>
-                <div class="propiedad">
-                    <div class="imagen_propiedad">
-                        <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble7.jpg" alt="Local Comercial">
-                    </div>
-                    <div class="detalles_propiedad">
-                        <p class="referencia">Ref. 1268</p>
-                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
-                        <div class="iconos">
-                            <span>🛋 1</span>
-                            <span>1038 m²</span>
-                        </div>
-                        <a href="/InmobiliariaRaicesLocal#" class="boton_info">Ver Detalles</a>
-                    </div>
-                </div>
-                <div class="propiedad">
-                    <div class="imagen_propiedad">
-                        <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble15.jpg" alt="Local Comercial">
-                    </div>
-                    <div class="detalles_propiedad">
-                        <p class="referencia">Ref. 1268</p>
-                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
-                        <div class="iconos">
-                            <span>🛋 1</span>
-                            <span>1038 m²</span>
-                        </div>
-                        <a href="/InmobiliariaRaicesLocal#" class="boton_info">Ver Detalles</a>
-                    </div>
-                </div>
-                <div class="propiedad">
-                    <div class="imagen_propiedad">
-                        <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble19.jpg" alt="Local Comercial">
-                    </div>
-                    <div class="detalles_propiedad">
-                        <p class="referencia">Ref. 1268 (2)</p>
-                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
-                        <div class="iconos">
-                            <span>🛋 1</span>
-                            <span>1038 m²</span>
-                        </div>
-                        <a href="/InmobiliariaRaicesLocal#" class="boton_info">Ver Detalles</a>
-                    </div>
-                </div>
-                <div class="propiedad">
-                    <div class="imagen_propiedad">
-                        <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble10.jpg" alt="Local Comercial">
-                    </div>
-                    <div class="detalles_propiedad">
-                        <p class="referencia">Ref. 1268</p>
-                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
-                        <div class="iconos">
-                            <span>🛋 1</span>
-                            <span>1038 m²</span>
-                        </div>
-                        <a href="/InmobiliariaRaicesLocal#" class="boton_info">Ver Detalles</a>
-                    </div>
-                </div>
-                <div class="propiedad">
-                    <div class="imagen_propiedad">
-                        <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble2.jpg" alt="Piso y Local">
-                    </div>
-                    <div class="detalles_propiedad">
-                        <p class="referencia">Ref. CAS_4278</p>
-                        <p class="descripcion">PISO + LOCAL DE 150 M</p>
-                        <div class="iconos">
-                            <span>🛋 2</span>
-                            <span>150 m²</span>
-                        </div>
-                        <a href="/InmobiliariaRaicesLocal#" class="boton_info">Ver Detalles</a>
-                    </div>
-                </div>
-                <div class="propiedad">
-                    <div class="imagen_propiedad">
-                        <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble13.jpg" alt="Local Comercial">
-                    </div>
-                    <div class="detalles_propiedad">
-                        <p class="referencia">Ref. 1268</p>
-                        <p class="descripcion">LOCAL O NAVE COMERCIAL CON 2 ENTRADAS Y ALTURA PA</p>
-                        <div class="iconos">
-                            <span>🛋 1</span>
-                            <span>1038 m²</span>
-                        </div>
-                        <a href="/InmobiliariaRaicesLocal#" class="boton_info">Ver Detalles</a>
-                    </div>
-                </div>
+                <label for="provincia">Provincia</label>
+                <select id="provincia" name="provincia">
+                    <option value="">Selecciona provincia</option>
+                </select>
+
+                <label for="municipio">Municipio</label>
+                <select id="municipio" name="municipio">
+                    <option value="">Selecciona municipio</option>
+                </select>
+
+                <label for="poblacion">Población/Barrio</label>
+                <select id="poblacion" name="poblacion">
+                    <option value="">Selecciona barrio</option>
+                </select>
             </div>
+
+            <div class="form-row">
+                <label for="zona">Zona</label>
+                <select id="zona" name="zona">
+                    <option value="">Selecciona zona</option>
+                </select>
+
+                <label for="estado">Estado/Conservación</label>
+                <select id="estado" name="estado">
+                    <option value="">Selecciona estado</option>
+                </select>
+
+                <label for="habitacion-min">Habitación</label>
+                <input type="number" id="habitacion-min" name="habitacion-min" placeholder="Mínimo">
+
+                <label for="habitacion-max">Habitación</label>
+                <input type="number" id="habitacion-max" name="habitacion-max" placeholder="Máximo">
+            </div>
+
+            <button type="submit" class="buscar-btn">Buscar</button>
+        </form>
+    </section>
+
+    <section class="promociones">
+        <h2>Promociones destacadas</h2>
+        <div class="promocion">
+            <img src="/InmobiliariaRaicesLocal/img/piscina.jpg" alt="Villa con piscina">
+            <h3>Villa con piscina en la costa</h3>
+            <p>Disfruta de esta espectacular villa con vistas al mar, 4 habitaciones, jardín privado y piscina. Perfecta
+                para escapadas familiares.</p>
         </div>
-    </main>
+        <div class="promocion">
+            <img src="/InmobiliariaRaicesLocal/img/fotosInmueble/Inmueble11.jpg" alt="Apartamento en el centro">
+            <h3>Apartamento moderno</h3>
+            <p>Este elegante apartamento de 2 habitaciones está ubicado en el corazón de la ciudad, cerca de tiendas y
+                restaurantes.</p>
+        </div>
+        <div class="promocion">
+            <img src="/InmobiliariaRaicesLocal/img/montaña.jpg" alt="Casa rural en las montañas">
+            <h3>Casa rural en las montañas</h3>
+            <p>Escápate al campo con esta encantadora casa de piedra, ideal para amantes de la naturaleza. Con chimenea
+                y terraza.</p>
+        </div>
+    </section>
+
     <footer>
         <div class="footer">
             <div class="footer_elementos">
@@ -240,6 +155,7 @@
 
         </div>
     </footer>
+
 </body>
 
 </html>
